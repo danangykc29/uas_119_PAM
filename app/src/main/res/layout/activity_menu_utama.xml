@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3BF8FF"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="idkaryawan" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewpembelian"
+            android:layout_width="411dp"
+            android:layout_height="37dp"
+            android:text="pemasukan catatan pembelian"
+            app:layout_constraintBottom_toTopOf="@+id/editText1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="407dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="46dp" />
+
+        <TextView
+            android:id="@+id/textViewpembayaran"
+            android:layout_width="411dp"
+            android:layout_height="36dp"
+            android:text="pembayaran sudah diterima"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxya"
+            android:layout_width="96dp"
+            android:layout_height="40dp"
+            android:text="Ya"
+            tools:layout_editor_absoluteX="221dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+        <TextView
+            android:id="@+id/textViewTgl"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:text="tanggal rekap data(yyyy/mm/dd)"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="151dp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="407dp"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+        <Button
+            android:id="@+id/buttonSimpan"
+            android:layout_width="407dp"
+            android:layout_height="55dp"
+            android:text="SIMPAN"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="288dp" />
+
+        <ListView
+            android:id="@+id/listViewDb"
+            android:layout_width="409dp"
+            android:layout_height="343dp"
+            android:background="#FFFFFF"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="344dp" />
+
+    </LinearLayout>
+</RelativeLayout>
